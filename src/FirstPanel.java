@@ -65,7 +65,7 @@ public class FirstPanel extends JPanel implements ActionListener{
         locationEntry = new JTextField();
         locationEntry.setText("ENTER ZIPCODE");
         locationEntry.setColumns(5);
-        checkTheBox = new JButton("Check the box for each activity you'd like an outfit for:");
+        checkTheBox = new JButton("Check the box for ONE activity you'd like an outfit for:");
         done = new JButton("DONE!");
         done.addActionListener(this);
         work = new JCheckBox();
@@ -189,7 +189,7 @@ public class FirstPanel extends JPanel implements ActionListener{
         locationEntry.setSize(200, 40);
         locationEntry.setFont(new Font("Baskerville", Font.BOLD, 16));
         checkTheBox.setLocation(90, 215);
-        checkTheBox.setSize(535, 40);
+        checkTheBox.setSize(550, 40);
         checkTheBox.setFont(new Font("Helvetica", Font.BOLD, 20));
         work.setLocation(310, 275);
         work.setFont(new Font("Impact", Font.BOLD, 20));
@@ -265,7 +265,8 @@ public class FirstPanel extends JPanel implements ActionListener{
         if(!isFirstPanel){
             weatherResult.setLocation(50, 70);
             weatherResult.setSize(550, 40);
-            display1.setLocation(250, 120);
+            weatherResult.setFont(new Font("Helvetica", Font.BOLD, 14));
+            display1.setLocation(250, 350);
             display1.setSize(200, 200);
 
             display2.setLocation(250, 320);
@@ -474,11 +475,11 @@ public class FirstPanel extends JPanel implements ActionListener{
                 makeList();
                 weatherResult = new JButton("The weather is on the " + weather + " side today. Your outfit(s) are below:");
                 weatherResult.setLocation(100, 70);
-                weatherResult.setSize(450, 150);
+                weatherResult.setSize(475, 150);
                 weatherResult.setFont(new Font("Helvetica", Font.BOLD, 17));
                 add(weatherResult);
                 display1 = new JButton("");
-                display1.setLocation(250, 120);
+                display1.setLocation(250, 350);
                 display1.setSize(200, 200);
                 add(display1);
                 display2 = new JButton("");
